@@ -13,7 +13,8 @@ RSpec.describe 'QuestionMarks' do
         end 
 
         context "Changing numbers between question marks" do 
-            xit 'Returns true when input is "5???5' do 
+            it 'Returns true when input is "5???5"' do 
+                expect(QuestionsMarks("5???5")).to eq(true)
             end 
 
             xit 'Returns true when input is 6???4' do 
