@@ -1,11 +1,5 @@
 def FirstFactorial(num)
-  if num <= 2
-    return num 
-  elsif num == 3
-    return 6
-  else 
-    return 24
-  end 
+   (1..num).inject(:*)
 end
 
 # # keep this function call here 
