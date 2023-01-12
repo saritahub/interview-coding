@@ -1,4 +1,4 @@
-# File: first_factorial_spec.rb
+# File: spec/first_factorial_spec.rb
 
 require 'first_factorial'
 
