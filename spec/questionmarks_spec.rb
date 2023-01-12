@@ -4,12 +4,15 @@ require 'questionmarks'
 
 RSpec.describe 'QuestionMarks' do 
     context 'Expected behavior' do
+        it 'Returns false when input is 1' do 
+            expect(QuestionsMarks(1)).to eq(false)
+        end 
+
+        it 'Returns false when input is 3482AB???' do 
+            expect(QuestionsMarks("3482AB???")).to eq(false)
+        end 
+
         context "Changing numbers between question marks" do 
-            it 'Returns false when input is 1' do 
-                expect(QuestionsMarks(1)).to eq(false)
-
-            end 
-
             xit 'Returns true when input is "5???5' do 
             end 
 
