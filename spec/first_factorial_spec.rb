@@ -15,6 +15,11 @@ RSpec.describe 'First Factorial' do
         it 'Returns 6 when the input is 3' do 
             expect(FirstFactorial(3)).to eq(6)
         end 
+
+        it 'Returns 24 when the input is 4' do 
+            expect(FirstFactorial(4)).to eq(24)
+        end 
+      
     end
 end 
 

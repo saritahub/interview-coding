@@ -1,8 +1,10 @@
 def FirstFactorial(num)
   if num <= 2
     return num 
-  else 
+  elsif num == 3
     return 6
+  else 
+    return 24
   end 
 end
 
