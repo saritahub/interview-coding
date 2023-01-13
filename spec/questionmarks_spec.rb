@@ -5,7 +5,7 @@ require 'questionmarks'
 RSpec.describe 'QuestionMarks' do 
     context 'Expected behavior' do
         it 'Returns false when input is 1' do 
-            expect(QuestionsMarks(1)).to eq(false)
+            expect(QuestionsMarks("1")).to eq(false)
         end 
 
         it 'Returns false when input is 3482AB???' do 
