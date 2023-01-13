@@ -4,6 +4,6 @@ def FindIntersection(strArr)
      first_arr = strArr[0].split(", ")
      second_arr = strArr[1].split(", ")
 
-     intersection = first_arr.intersection(second_arr).join(", ")
+     intersection = first_arr.intersection(second_arr).join(",")
 
 end

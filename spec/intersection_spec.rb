@@ -13,11 +13,11 @@ RSpec.describe 'intersection' do
         end 
 
         it 'Returns 1, 4, 13 as the intersection' do 
-            expect(FindIntersection(["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"])).to eq("1, 4, 13")
+            expect(FindIntersection(["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"])).to eq("1,4,13")
         end 
 
         it 'Returns 1, 9, 10 as the intersection' do 
-            expect(FindIntersection(["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"])).to eq("1, 9, 10")
+            expect(FindIntersection(["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"])).to eq("1,9,10")
         end 
     end 
 end 
