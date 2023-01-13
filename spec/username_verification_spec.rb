@@ -11,6 +11,10 @@ RSpec.describe 'CodelandUsernameValidation' do
         it 'Returns false if the username ends with an underscore' do 
             expect(CodelandUsernameValidation("1wrongtoo_")).to eq(false)
         end 
+
+        it 'Returns true when the username matches requirements' do 
+            expect(CodelandUsernameValidation("this")).to eq(true)
+        end 
     end 
 end 
 
