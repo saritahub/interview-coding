@@ -20,6 +20,10 @@ RSpec.describe 'BracketsMatched' do
             expect(BracketMatcher("No brackets")).to eq("0")
         end 
 
+        it 'Returns 0 when the brackets do not match' do 
+            expect(BracketMatcher("(coder)(byte))")).to eq("0")
+        end 
+
     end 
 end 
 
