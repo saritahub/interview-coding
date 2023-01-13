@@ -1,9 +1,9 @@
 # File: lib/intersection.rb 
 
 def FindIntersection(strArr)
-    if strArr == ["1", "1"]
-        return "1"
-    else 
-        return "2"
-    end 
+     first_arr = strArr[0].split(", ")
+     second_arr = strArr[1].split(", ")
+
+     intersection = first_arr.intersection(second_arr).join(", ")
+
 end
