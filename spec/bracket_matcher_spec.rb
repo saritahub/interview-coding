@@ -16,6 +16,10 @@ RSpec.describe 'BracketsMatched' do
             expect(BracketMatcher("(c(oder)) b(yte)")).to eq("1")
         end 
 
+        it 'Returns 0 when there are no brackets' do 
+            expect(BracketMatcher("No brackets")).to eq("0")
+        end 
+
     end 
 end 
 
