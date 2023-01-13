@@ -12,5 +12,5 @@ def BracketMatcher(str)
         end
     } 
 
-    (!right_bracket.empty? && !left_bracket.empty?) && (right_bracket.length == left_bracket.length) ? "1" : "0"
+    (right_bracket.length == left_bracket.length) ? "1" : "0"
 end
