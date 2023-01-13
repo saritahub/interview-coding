@@ -19,5 +19,9 @@ RSpec.describe 'intersection' do
         it 'Returns 1, 9, 10 as the intersection' do 
             expect(FindIntersection(["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"])).to eq("1,9,10")
         end 
+
+        it 'Returns false if there is no intersection' do 
+            expect(FindIntersection(["1, 2, 3, 4, 5", "6, 7, 8, 9, 10"])).to eq(false)
+        end
     end 
 end 

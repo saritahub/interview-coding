@@ -6,4 +6,9 @@ def FindIntersection(strArr)
 
      intersection = first_arr.intersection(second_arr).join(",")
 
+     if intersection.empty?
+        return false
+     else 
+        return intersection
+     end 
 end
