@@ -11,5 +11,9 @@ RSpec.describe 'FirstReverse' do
         it 'Returns lley when the input is yell' do 
             expect(FirstReverse('yell')).to eq('lley')
         end 
+
+        it 'Returns ErEhT oLlEH when the input is HElLo ThErE' do 
+            expect(FirstReverse('HElLo ThErE')).to eq('ErEhT oLlEH')
+        end 
     end
 end 
