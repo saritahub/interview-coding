@@ -24,13 +24,12 @@ RSpec.describe 'CodelandUsernameValidation' do
             expect(CodelandUsernameValidation("t_s")).to eq(false)
         end 
 
+        it 'Returns true when the username contains letters, numbers and underscores' do 
+            expect(CodelandUsernameValidation("u__hello_world123")).to eq(true)
+        end 
+
         
     end 
 end 
-
-# Input: "aa_"
-# Output: false
-# Input: "u__hello_world123"
-# Output: true
 
 

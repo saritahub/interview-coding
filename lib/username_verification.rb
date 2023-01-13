@@ -1,7 +1,10 @@
 # File: lib/username_verification.rb
 
 def CodelandUsernameValidation(str)
-    if str == "this" || str == "th_is"
+    letters = /^[A-Za-z]+$/
+    allowed_chars = /^[A-Za-z, _, [+-]?\d+]+$/
+
+    if str.length.between?(4, 25) && str[0].match(letters) != nil && str[-1] != "_" && str.match(allowed_chars) != nil
         return true 
     else 
         return false 
