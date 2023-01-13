@@ -12,9 +12,15 @@ RSpec.describe 'CodelandUsernameValidation' do
             expect(CodelandUsernameValidation("1wrongtoo_")).to eq(false)
         end 
 
-        it 'Returns true when the username matches requirements' do 
+        it 'Returns true when the username contains four letters' do 
             expect(CodelandUsernameValidation("this")).to eq(true)
         end 
+
+        it 'Returns true when the username contains 4 letters and an underscore' do 
+            expect(CodelandUsernameValidation("th_is")).to eq(true)
+        end 
+
+        
     end 
 end 
 
