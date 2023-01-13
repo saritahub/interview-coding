@@ -53,6 +53,7 @@ RSpec.describe 'QuestionMarks' do
             expect(QuestionsMarks("acc?7??sss?3rr1??????5")).to eq(true)
         end 
 
+        # Iterate over array to test all of these
         xit 'Returns false when input is "9???1???9??1???9"' do 
             expect(QuestionsMarks("9???1???9??1???9")).to eq(false)
         end
