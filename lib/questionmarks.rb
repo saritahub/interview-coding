@@ -14,9 +14,7 @@ def QuestionsMarks(str)
         return false
     end
 end
- 
-# Remove all characters except numbers and question marks
-# gsub(/[^0-9,?,.]/, "")
+
 
 
 

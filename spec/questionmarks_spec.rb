@@ -31,7 +31,7 @@ RSpec.describe 'QuestionMarks' do
                 expect(QuestionsMarks("5???55???5")).to eq(true)
             end 
 
-            xit 'Returns true when input is 6???46???4' do 
+            it 'Returns true when input is 6???46???4' do 
                 expect(QuestionsMarks("6???46???4")).to eq(true)
             end
             # acc?7??sss?3rr1??????5
