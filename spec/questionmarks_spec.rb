@@ -34,21 +34,22 @@ RSpec.describe 'QuestionMarks' do
             it 'Returns true when input is 6???46???4' do 
                 expect(QuestionsMarks("6???46???4")).to eq(true)
             end
-            # acc?7??sss?3rr1??????5
+            
             it 'Returns false when input is 1???21???2' do 
                 expect(QuestionsMarks("1???21???2")).to eq(false)
             end 
         end 
 
-
-
-        xit 'Returns true when input is "arrb6???4xxbl5???eee5"' do 
+        
+        it 'Returns true when input is "arrb6???4xxbl5???eee5"' do 
+            expect(QuestionsMarks("arrb6???4xxbl5???eee5")).to eq(true)
         end 
 
         xit 'Returns false when input is "aa6?9"' do 
         end 
 
-        xit 'Returns true when input is "acc?7??sss?3rr1??????5"' do 
+        xit 'Returns true when input is "acc?7??sss?3rr1??????5"' do
+            
         end 
     end 
 end 
