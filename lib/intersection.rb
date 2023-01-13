@@ -1,14 +1,7 @@
 # File: lib/intersection.rb 
 
 def FindIntersection(strArr)
-     first_arr = strArr[0].split(", ")
-     second_arr = strArr[1].split(", ")
+     intersection = strArr[0].split(", ").intersection(strArr[1].split(", ")).join(",")
 
-     intersection = first_arr.intersection(second_arr).join(",")
-
-     if intersection.empty?
-        return false
-     else 
-        return intersection
-     end 
+     intersection.empty? ? false : intersection
 end
