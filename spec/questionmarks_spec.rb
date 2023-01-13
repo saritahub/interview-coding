@@ -12,7 +12,7 @@ RSpec.describe 'QuestionMarks' do
             expect(QuestionsMarks("3482AB???")).to eq(false)
         end 
 
-        context "Changing numbers between question marks" do 
+        context "One set of numbers: Changing numbers between question marks" do 
             it 'Returns true when input is "5???5"' do 
                 expect(QuestionsMarks("5???5")).to eq(true)
             end 
@@ -23,6 +23,20 @@ RSpec.describe 'QuestionMarks' do
 
             it 'Returns false when input is 1???2' do 
                 expect(QuestionsMarks("1???2")).to eq(false)
+            end 
+        end 
+
+        context "Two sets of numbers: Changing numbers between question marks" do 
+            it 'Returns true when input is "5???55???5"' do 
+                expect(QuestionsMarks("5???55???5")).to eq(true)
+            end 
+
+            xit 'Returns true when input is 6???46???4' do 
+                expect(QuestionsMarks("6???46???4")).to eq(true)
+            end
+            # acc?7??sss?3rr1??????5
+            xit 'Returns false when input is 1???21???2' do 
+                expect(QuestionsMarks("1???21???2")).to eq(false)
             end 
         end 
 
