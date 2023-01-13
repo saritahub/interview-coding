@@ -15,5 +15,9 @@ RSpec.describe 'FirstReverse' do
         it 'Returns ErEhT oLlEH when the input is HElLo ThErE' do 
             expect(FirstReverse('HElLo ThErE')).to eq('ErEhT oLlEH')
         end 
+
+        it 'Returns 321 when the input is 123' do 
+            expect(FirstReverse('123')).to eq('321')
+        end 
     end
 end 
