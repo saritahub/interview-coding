@@ -27,11 +27,3 @@ RSpec.describe 'BracketsMatched' do
     end 
 end 
 
-
-
-
-# Input: "(coder)(byte))"
-# Output: 0
-# Input: "(c(oder)) b(yte)"
-# Output: 1
-
