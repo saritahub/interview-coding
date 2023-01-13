@@ -12,7 +12,10 @@ RSpec.describe 'BracketsMatched' do
             expect(BracketMatcher("(hello)")).to eq(1)
         end 
 
-        
+        it 'Returns 1 when (c(oder)) b(yte) is passed through' do 
+            expect(BracketMatcher("(c(oder)) b(yte)")).to eq(1)
+        end 
+
     end 
 end 
 
