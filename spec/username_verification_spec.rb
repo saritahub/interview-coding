@@ -20,6 +20,10 @@ RSpec.describe 'CodelandUsernameValidation' do
             expect(CodelandUsernameValidation("th_is")).to eq(true)
         end 
 
+        it 'Returns false when the username has 3 characters' do 
+            expect(CodelandUsernameValidation("t_s")).to eq(false)
+        end 
+
         
     end 
 end 
