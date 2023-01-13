@@ -28,6 +28,10 @@ RSpec.describe 'CodelandUsernameValidation' do
             expect(CodelandUsernameValidation("u__hello_world123")).to eq(true)
         end 
 
+        it 'Returns false when the username is over 25 characters' do 
+            expect(CodelandUsernameValidation("u___________________________hello_world123")).to eq(false)
+        end 
+
         
     end 
 end 
