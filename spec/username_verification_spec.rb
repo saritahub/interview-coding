@@ -7,6 +7,10 @@ RSpec.describe 'CodelandUsernameValidation' do
         it 'Returns false if the username does start with a letter' do 
             expect(CodelandUsernameValidation("1wrong")).to eq(false)
         end 
+
+        it 'Returns false if the username ends with an underscore' do 
+            expect(CodelandUsernameValidation("1wrongtoo_")).to eq(false)
+        end 
     end 
 end 
 
