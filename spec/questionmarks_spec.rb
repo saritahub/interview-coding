@@ -18,9 +18,11 @@ RSpec.describe 'QuestionMarks' do
             end 
 
             xit 'Returns true when input is 6???4' do 
+                expect(QuestionsMarks("6???4")).to eq(true)
             end
 
-            xit 'Returns false when input is 1???2' do 
+            it 'Returns false when input is 1???2' do 
+                expect(QuestionsMarks("1???2")).to eq(false)
             end 
         end 
 
