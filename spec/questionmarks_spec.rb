@@ -49,8 +49,8 @@ RSpec.describe 'QuestionMarks' do
             expect(QuestionsMarks("aa6?9")).to eq(false)
         end 
 
-        xit 'Returns true when input is "acc?7??sss?3rr1??????5"' do
-            
+        it 'Returns true when input is "acc?7??sss?3rr1??????5"' do
+            expect(QuestionsMarks("acc?7??sss?3rr1??????5")).to eq(true)
         end 
     end 
 end 
