@@ -1,15 +1,19 @@
 # File: spec/MinWindowSubstring_spec.rb
 
-# require 'MinWindowSubstring'
+require 'MinWindowSubstring'
 
 RSpec.describe 'MinWindowSubstring' do 
     context 'Expected behavior' do 
+        it 'Returns "a" when the input is ["a", "a"]' do 
+            expect(MinWindowSubstring(["a", "a"])).to eq("a")
+        end 
+
     end 
 end 
 
-# def MinWindowSubstring(strArr)
 
-#     # code goes here
-#     return strArr
-  
-# end
+
+# Input: ["ahffaksfajeeubsne", "jefaa"]
+# Output: aksfaje
+# Input: ["aaffhkksemckelloe", "fhea"]
+# Output: affhkkse
