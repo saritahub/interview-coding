@@ -1,6 +1,6 @@
 # Code challenge practice 
 
-Using a TDD approach, I have completed code challenges from: 
+Using a **TDD approach**, I have completed code challenges from: 
 
 
 | Resource | Completed challenge links                                         | Languages |
