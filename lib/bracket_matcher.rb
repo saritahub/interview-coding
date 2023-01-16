@@ -4,7 +4,7 @@ def BracketMatcher(str)
     right_bracket = []
     left_bracket = []
 
-    strArr = str.split("").map { |element|
+    str_arr = str.split("").map { |element|
         if element == "("
             right_bracket.push(element)
         elsif element == ")"
