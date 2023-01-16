@@ -8,6 +8,10 @@ RSpec.describe 'MinWindowSubstring' do
             expect(MinWindowSubstring(["a", "a"])).to eq("a")
         end 
 
+        it 'Returns "a" when the input is ["ba", "a"]' do 
+            expect(MinWindowSubstring(["ba", "a"])).to eq("a")
+        end 
+
     end 
 end 
 
