@@ -16,6 +16,10 @@ RSpec.describe 'MinWindowSubstring' do
             expect(MinWindowSubstring(["ced", "ce"])).to eq("ce")
         end 
 
+        it 'Returns "cake" when the input is ["pcake", "cake"]' do 
+            expect(MinWindowSubstring(["pcake", "cake"])).to eq("cake")
+        end 
+
     end 
 end 
 
